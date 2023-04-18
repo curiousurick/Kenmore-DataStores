@@ -40,11 +40,11 @@ let package = Package(
     ],
     dependencies: [
         .package(
-            url: "https://github.com/curiousurick/FloatplaneApp-Models",
+            url: "https://github.com/curiousurick/FloatplaneApp-Models.git",
             branch: "main"
         ),
         .package(
-            url: "https://github.com/curiousurick/FloatplaneApp-Utilities",
+            url: "https://github.com/curiousurick/FloatplaneApp-Utilities.git",
             branch: "main"
         ),
         .package(
