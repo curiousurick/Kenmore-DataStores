@@ -27,6 +27,11 @@
 		5E4CE94D29D90FAB0029110E /* UICKeyChainStore in Frameworks */ = {isa = PBXBuildFile; productRef = 5E4CE94C29D90FAB0029110E /* UICKeyChainStore */; };
 		5E4CE95829D90FE00029110E /* Cache in Frameworks */ = {isa = PBXBuildFile; productRef = 5E4CE95729D90FE00029110E /* Cache */; };
 		5E51553429EE706A009B68EA /* FloatplaneApp-Utilities in Frameworks */ = {isa = PBXBuildFile; productRef = 5E51553329EE706A009B68EA /* FloatplaneApp-Utilities */; };
+		5E51556B29EE7704009B68EA /* swiftformat.sh in Resources */ = {isa = PBXBuildFile; fileRef = 5E51556829EE7704009B68EA /* swiftformat.sh */; };
+		5E51556C29EE7704009B68EA /* xcodebuilds.sh in Resources */ = {isa = PBXBuildFile; fileRef = 5E51556929EE7704009B68EA /* xcodebuilds.sh */; };
+		5E51556D29EE7704009B68EA /* build.sh in Resources */ = {isa = PBXBuildFile; fileRef = 5E51556A29EE7704009B68EA /* build.sh */; };
+		5E51556F29EE770B009B68EA /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 5E51556E29EE770B009B68EA /* README.md */; };
+		5E51557129EE7736009B68EA /* codecoverage.yml in Resources */ = {isa = PBXBuildFile; fileRef = 5E51557029EE7736009B68EA /* codecoverage.yml */; };
 		5E81C70E29EE498C009BB58B /* FloatplaneApp-Models in Frameworks */ = {isa = PBXBuildFile; productRef = 5E81C70D29EE498C009BB58B /* FloatplaneApp-Models */; };
 /* End PBXBuildFile section */
 
@@ -61,6 +66,11 @@
 		5E4CE94229D90F560029110E /* KeychainAccess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainAccess.swift; sourceTree = "<group>"; };
 		5E4CE94F29D90FBD0029110E /* FloatplaneApp_Utilities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FloatplaneApp_Utilities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E4CE95329D90FC30029110E /* FloatplaneApp_Models.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FloatplaneApp_Models.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E51556829EE7704009B68EA /* swiftformat.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = swiftformat.sh; sourceTree = "<group>"; };
+		5E51556929EE7704009B68EA /* xcodebuilds.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = xcodebuilds.sh; sourceTree = "<group>"; };
+		5E51556A29EE7704009B68EA /* build.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = build.sh; sourceTree = "<group>"; };
+		5E51556E29EE770B009B68EA /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
+		5E51557029EE7736009B68EA /* codecoverage.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; name = codecoverage.yml; path = .github/workflows/codecoverage.yml; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +111,7 @@
 		5E4CE91029D90F330029110E = {
 			isa = PBXGroup;
 			children = (
+				5E51556729EE7704009B68EA /* scripts */,
 				5E4CE91C29D90F330029110E /* FloatplaneApp-DataStores */,
 				5E4CE92829D90F330029110E /* FloatplaneApp-DataStoresTests */,
 				5E4CE91B29D90F330029110E /* Products */,
@@ -150,6 +161,18 @@
 				5E4CE94F29D90FBD0029110E /* FloatplaneApp_Utilities.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5E51556729EE7704009B68EA /* scripts */ = {
+			isa = PBXGroup;
+			children = (
+				5E51556E29EE770B009B68EA /* README.md */,
+				5E51556829EE7704009B68EA /* swiftformat.sh */,
+				5E51556929EE7704009B68EA /* xcodebuilds.sh */,
+				5E51557029EE7736009B68EA /* codecoverage.yml */,
+				5E51556A29EE7704009B68EA /* build.sh */,
+			);
+			path = scripts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,6 +279,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E51556D29EE7704009B68EA /* build.sh in Resources */,
+				5E51556B29EE7704009B68EA /* swiftformat.sh in Resources */,
+				5E51556F29EE770B009B68EA /* README.md in Resources */,
+				5E51557129EE7736009B68EA /* codecoverage.yml in Resources */,
+				5E51556C29EE7704009B68EA /* xcodebuilds.sh in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
