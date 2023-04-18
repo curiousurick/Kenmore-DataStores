@@ -1,11 +1,5 @@
 # FloatplaneApp-DataStores
-This is the DataStores library for FloatplaneApp for iOS. It contains classes used to store the data that is needed for any platform of the Floatplane app.
-
-| ![image](Assets/Browse_Screenshot.png) | ![image](Assets/LiveOffline_Screenshot.png) |
-| --- | --- |
-
-| ![image](Assets/Search_Screenshot.png) | ![image](Assets/Login_Screenshot.png) |
-| --- | --- |
+This is the DataStores library for FloatplaneApp for iOS and tvOS. It contains classes used to store the data that is needed for any platform of the Floatplane app.
 
 # Setup
 Follow these instructions to get this app installed on your Apple TV or tvOS simulator.
