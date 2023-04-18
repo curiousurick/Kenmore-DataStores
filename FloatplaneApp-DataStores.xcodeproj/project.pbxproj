@@ -18,7 +18,7 @@
 		5E1FD71129DAA2970015AE6F /* MockDiskStorageWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1FD71029DAA2970015AE6F /* MockDiskStorageWrapper.swift */; };
 		5E1FD71329DAA3450015AE6F /* DiskStorageWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1FD71229DAA3450015AE6F /* DiskStorageWrapper.swift */; };
 		5E1FD71529DAADA80015AE6F /* AppSettingsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1FD71429DAADA80015AE6F /* AppSettingsTest.swift */; };
-		5E4CE91F29D90F330029110E /* FloatplaneApp_DataStores.docc in Sources */ = {isa = PBXBuildFile; fileRef = 5E4CE91E29D90F330029110E /* FloatplaneApp_DataStores.docc */; };
+		5E4CE91F29D90F330029110E /* FloatplaneApp_DataStores.docc in Resources */ = {isa = PBXBuildFile; fileRef = 5E4CE91E29D90F330029110E /* FloatplaneApp_DataStores.docc */; };
 		5E4CE92529D90F330029110E /* FloatplaneApp_DataStores.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E4CE91A29D90F330029110E /* FloatplaneApp_DataStores.framework */; };
 		5E4CE94629D90F570029110E /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4CE93D29D90F560029110E /* AppSettings.swift */; };
 		5E4CE94729D90F800029110E /* KeychainAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4CE94229D90F560029110E /* KeychainAccess.swift */; };
@@ -27,11 +27,6 @@
 		5E4CE94D29D90FAB0029110E /* UICKeyChainStore in Frameworks */ = {isa = PBXBuildFile; productRef = 5E4CE94C29D90FAB0029110E /* UICKeyChainStore */; };
 		5E4CE95829D90FE00029110E /* Cache in Frameworks */ = {isa = PBXBuildFile; productRef = 5E4CE95729D90FE00029110E /* Cache */; };
 		5E51553429EE706A009B68EA /* FloatplaneApp-Utilities in Frameworks */ = {isa = PBXBuildFile; productRef = 5E51553329EE706A009B68EA /* FloatplaneApp-Utilities */; };
-		5E51556B29EE7704009B68EA /* swiftformat.sh in Resources */ = {isa = PBXBuildFile; fileRef = 5E51556829EE7704009B68EA /* swiftformat.sh */; };
-		5E51556C29EE7704009B68EA /* xcodebuilds.sh in Resources */ = {isa = PBXBuildFile; fileRef = 5E51556929EE7704009B68EA /* xcodebuilds.sh */; };
-		5E51556D29EE7704009B68EA /* build.sh in Resources */ = {isa = PBXBuildFile; fileRef = 5E51556A29EE7704009B68EA /* build.sh */; };
-		5E51556F29EE770B009B68EA /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 5E51556E29EE770B009B68EA /* README.md */; };
-		5E51557129EE7736009B68EA /* codecoverage.yml in Resources */ = {isa = PBXBuildFile; fileRef = 5E51557029EE7736009B68EA /* codecoverage.yml */; };
 		5E81C70E29EE498C009BB58B /* FloatplaneApp-Models in Frameworks */ = {isa = PBXBuildFile; productRef = 5E81C70D29EE498C009BB58B /* FloatplaneApp-Models */; };
 /* End PBXBuildFile section */
 
@@ -279,11 +274,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5E51556D29EE7704009B68EA /* build.sh in Resources */,
-				5E51556B29EE7704009B68EA /* swiftformat.sh in Resources */,
-				5E51556F29EE770B009B68EA /* README.md in Resources */,
-				5E51557129EE7736009B68EA /* codecoverage.yml in Resources */,
-				5E51556C29EE7704009B68EA /* xcodebuilds.sh in Resources */,
+				5E4CE91F29D90F330029110E /* FloatplaneApp_DataStores.docc in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,7 +292,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5E4CE91F29D90F330029110E /* FloatplaneApp_DataStores.docc in Sources */,
 				5E4CE94729D90F800029110E /* KeychainAccess.swift in Sources */,
 				5E4CE94829D90F820029110E /* UserStore.swift in Sources */,
 				5E4CE94629D90F570029110E /* AppSettings.swift in Sources */,
