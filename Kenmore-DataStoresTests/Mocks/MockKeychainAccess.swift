@@ -19,45 +19,32 @@
 //  THE SOFTWARE.
 //
 
-import XCTest
-import FloatplaneApp_Models
-@testable import FloatplaneApp_DataStores
+import Foundation
+@testable import Kenmore_DataStores
 
-private let QualitySettingsKey = "com.georgie.floatplane.QualitySettings"
-
-private extension AppSettings {
-    func reset() {
-        UserDefaults.standard.removeObject(forKey: QualitySettingsKey)
-    }
-}
-
-final class AppSettingsTest: XCTestCase {
-    private var subject: AppSettings!
-
-    override func setUp() {
-        super.setUp()
-        subject = AppSettings.instance
-        subject.reset()
+class MockKeychainAccess: KeychainAccess {
+    init() {
+        super.init(keychain: MockUICKeyChainStore())
     }
 
-    func testSetAndGetQualitySettings() {
-        // Act
-        subject.qualitySettings = .ql1080p
-
-        // Assert
-        XCTAssertEqual(subject.qualitySettings, .ql1080p)
+    var mockDataForKey: (String, Data?)?
+    var dataForKeyCallCount = 0
+    override func data(forKey key: String) -> Data? {
+        dataForKeyCallCount += 1
+        if let mockDataForKey = mockDataForKey,
+           mockDataForKey.0 == key {
+            return mockDataForKey.1
+        }
+        return nil
     }
 
-    func testGetDefaultQualityLevel() {
-        // Assert
-        XCTAssertEqual(subject.qualitySettings, DeliveryKeyQualityLevel.defaultLevel)
+    var setDataForKeyCallCount = 0
+    override func setData(_: Data?, forKey _: String) {
+        setDataForKeyCallCount += 1
     }
 
-    func testGetWhenSavedIsNotValidQualityLevel() {
-        // Arrange
-        UserDefaults.standard.set("Blah", forKey: QualitySettingsKey)
-
-        // Assert
-        XCTAssertEqual(subject.qualitySettings, DeliveryKeyQualityLevel.defaultLevel)
+    var removeItemCallCount = 0
+    override func removeItem(forKey _: String) {
+        removeItemCallCount += 1
     }
 }

@@ -10,21 +10,21 @@
       }
     },
     {
-      "identity" : "floatplaneapp-models",
+      "identity" : "kenmore-models",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/curiousurick/FloatplaneApp-Models.git",
+      "location" : "git@github.com:curiousurick/Kenmore-Models.git",
       "state" : {
         "branch" : "main",
-        "revision" : "e8b4beb8edb6614143bec2015d857e2c0aa5dce3"
+        "revision" : "eae4a343c12be17f7d8b6e153e29525775a570f3"
       }
     },
     {
-      "identity" : "floatplaneapp-utilities",
+      "identity" : "kenmore-utilities",
       "kind" : "remoteSourceControl",
-      "location" : "git@github.com:curiousurick/FloatplaneApp-Utilities.git",
+      "location" : "git@github.com:curiousurick/Kenmore-Utilities.git",
       "state" : {
         "branch" : "main",
-        "revision" : "48c6aab99d35e754ace011c5d8042be72de1f165"
+        "revision" : "b67cabc33015655c9615e3b89868c3d9d9060c87"
       }
     },
     {

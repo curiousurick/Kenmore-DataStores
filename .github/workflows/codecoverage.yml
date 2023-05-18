@@ -1,4 +1,4 @@
-name: FloatplaneApp-DataStores Build Workflow
+name: Kenmore-DataStores Build Workflow
 
 on:
   push:

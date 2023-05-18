@@ -20,31 +20,34 @@
 //
 
 import Foundation
-@testable import FloatplaneApp_DataStores
+import Kenmore_Models
 
-class MockKeychainAccess: KeychainAccess {
-    init() {
-        super.init(keychain: MockUICKeyChainStore())
-    }
+/// Basic App settings access. Use this for non-restricted data.
+/// Currently used for default quality level settings. Do not put personal or private data here.
+public class AppSettings {
+    private let QualitySettingsKey = "com.georgie.floatplane.QualitySettings"
+    /// Data is stored in UserDefaults
+    private let userDefaults = UserDefaults.standard
 
-    var mockDataForKey: (String, Data?)?
-    var dataForKeyCallCount = 0
-    override func data(forKey key: String) -> Data? {
-        dataForKeyCallCount += 1
-        if let mockDataForKey = mockDataForKey,
-           mockDataForKey.0 == key {
-            return mockDataForKey.1
+    /// Singleton access to UserSettings
+    public static let instance = AppSettings()
+
+    private init() {}
+
+    /// This is used as the default quality level settings when starting a new video.
+    /// If never selected, the default value is returned of 720p.
+    public var qualitySettings: DeliveryKeyQualityLevel {
+        get {
+            // Found in userDefault
+            if let savedValue = userDefaults.string(forKey: QualitySettingsKey),
+               let quality = DeliveryKeyQualityLevel(rawValue: savedValue) {
+                return quality
+            }
+            // First time use default
+            return DeliveryKeyQualityLevel.defaultLevel
         }
-        return nil
-    }
-
-    var setDataForKeyCallCount = 0
-    override func setData(_: Data?, forKey _: String) {
-        setDataForKeyCallCount += 1
-    }
-
-    var removeItemCallCount = 0
-    override func removeItem(forKey _: String) {
-        removeItemCallCount += 1
+        set {
+            userDefaults.set(newValue.rawValue, forKey: QualitySettingsKey)
+        }
     }
 }

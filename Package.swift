@@ -26,7 +26,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "FloatplaneApp-DataStores",
+    name: "Kenmore-DataStores",
     platforms: [
         .macOS(.v12),
         .iOS(.v15),
@@ -34,17 +34,17 @@ let package = Package(
     ],
     products: [
         .library(
-            name: "FloatplaneApp-DataStores",
-            targets: ["FloatplaneApp-DataStores"]
+            name: "Kenmore-DataStores",
+            targets: ["Kenmore-DataStores"]
         ),
     ],
     dependencies: [
         .package(
-            url: "https://github.com/curiousurick/FloatplaneApp-Models.git",
+            url: "https://github.com/curiousurick/Kenmore-Models.git",
             branch: "main"
         ),
         .package(
-            url: "https://github.com/curiousurick/FloatplaneApp-Utilities.git",
+            url: "https://github.com/curiousurick/Kenmore-Utilities.git",
             branch: "main"
         ),
         .package(
@@ -58,25 +58,25 @@ let package = Package(
     ],
     targets: [
         .target(
-            name: "FloatplaneApp-DataStores",
+            name: "Kenmore-DataStores",
             dependencies: [
-                "FloatplaneApp-Models",
-                "FloatplaneApp-Utilities",
+                "Kenmore-Models",
+                "Kenmore-Utilities",
                 "UICKeyChainStore",
                 "Cache",
             ],
-            path: "FloatplaneApp-DataStores",
+            path: "Kenmore-DataStores",
             exclude: []
         ),
         .testTarget(
-            name: "FloatplaneApp-DataStoresTests",
+            name: "Kenmore-DataStoresTests",
             dependencies: [
-                "FloatplaneApp-DataStores",
-                "FloatplaneApp-Models",
+                "Kenmore-DataStores",
+                "Kenmore-Models",
                 "UICKeyChainStore",
                 "Cache",
             ],
-            path: "FloatplaneApp-DataStoresTests",
+            path: "Kenmore-DataStoresTests",
             exclude: [],
             resources: []
         ),

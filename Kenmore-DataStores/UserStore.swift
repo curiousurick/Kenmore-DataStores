@@ -20,8 +20,8 @@
 //
 
 import Foundation
-import FloatplaneApp_Models
-import FloatplaneApp_Utilities
+import Kenmore_Models
+import Kenmore_Utilities
 
 public protocol UserStore {
     func getUser() -> User?

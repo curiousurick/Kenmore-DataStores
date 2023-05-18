@@ -20,7 +20,7 @@
 //
 
 import XCTest
-@testable import FloatplaneApp_DataStores
+@testable import Kenmore_DataStores
 
 final class KeychainAccessTest: XCTestCase {
     private var keychainStoreMock: MockUICKeyChainStore!

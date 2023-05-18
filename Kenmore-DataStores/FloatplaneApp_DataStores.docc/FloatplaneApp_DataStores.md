@@ -1,4 +1,4 @@
-# ``FloatplaneApp_DataStores``
+# ``Kenmore_DataStores``
 
 <!--@START_MENU_TOKEN@-->Summary<!--@END_MENU_TOKEN@-->
 

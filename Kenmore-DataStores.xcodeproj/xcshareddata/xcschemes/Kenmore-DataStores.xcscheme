@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "5E4CE91929D90F330029110E"
-               BuildableName = "FloatplaneApp_DataStores.framework"
-               BlueprintName = "FloatplaneApp-DataStores"
-               ReferencedContainer = "container:FloatplaneApp-DataStores.xcodeproj">
+               BuildableName = "Kenmore_DataStores.framework"
+               BlueprintName = "Kenmore-DataStores"
+               ReferencedContainer = "container:Kenmore-DataStores.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "5E4CE91929D90F330029110E"
-            BuildableName = "FloatplaneApp_DataStores.framework"
-            BlueprintName = "FloatplaneApp-DataStores"
-            ReferencedContainer = "container:FloatplaneApp-DataStores.xcodeproj">
+            BuildableName = "Kenmore_DataStores.framework"
+            BlueprintName = "Kenmore-DataStores"
+            ReferencedContainer = "container:Kenmore-DataStores.xcodeproj">
          </BuildableReference>
       </CodeCoverageTargets>
       <Testables>
@@ -45,9 +45,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "5E4CE92329D90F330029110E"
-               BuildableName = "FloatplaneApp-DataStoresTests.xctest"
-               BlueprintName = "FloatplaneApp-DataStoresTests"
-               ReferencedContainer = "container:FloatplaneApp-DataStores.xcodeproj">
+               BuildableName = "Kenmore-DataStoresTests.xctest"
+               BlueprintName = "Kenmore-DataStoresTests"
+               ReferencedContainer = "container:Kenmore-DataStores.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -73,9 +73,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "5E4CE91929D90F330029110E"
-            BuildableName = "FloatplaneApp_DataStores.framework"
-            BlueprintName = "FloatplaneApp-DataStores"
-            ReferencedContainer = "container:FloatplaneApp-DataStores.xcodeproj">
+            BuildableName = "Kenmore_DataStores.framework"
+            BlueprintName = "Kenmore-DataStores"
+            ReferencedContainer = "container:Kenmore-DataStores.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>

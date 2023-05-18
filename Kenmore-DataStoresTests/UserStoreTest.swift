@@ -20,8 +20,8 @@
 //
 
 import XCTest
-import FloatplaneApp_Models
-@testable import FloatplaneApp_DataStores
+import Kenmore_Models
+@testable import Kenmore_DataStores
 
 final class UserStoreTest: XCTestCase {
     private let UserStoreKey = "UserStoreKey"

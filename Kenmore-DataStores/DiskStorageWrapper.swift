@@ -21,7 +21,7 @@
 
 import Cache
 import Foundation
-import FloatplaneApp_Utilities
+import Kenmore_Utilities
 
 /// Wrapper for Cache framework's Storage object
 public class DiskStorageWrapper<Key: Hashable, Value: Codable> {

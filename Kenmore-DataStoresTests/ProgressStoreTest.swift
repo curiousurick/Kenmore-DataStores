@@ -21,7 +21,7 @@
 
 import Cache
 import XCTest
-@testable import FloatplaneApp_DataStores
+@testable import Kenmore_DataStores
 
 final class ProgressStoreTest: XCTestCase {
     private let VideoKey = "VideoKey"

@@ -11,20 +11,20 @@
         }
       },
       {
-        "package": "FloatplaneApp-Models",
-        "repositoryURL": "https://github.com/curiousurick/FloatplaneApp-Models",
+        "package": "Kenmore-Models",
+        "repositoryURL": "https://github.com/curiousurick/Kenmore-Models.git",
         "state": {
           "branch": "main",
-          "revision": "e8b4beb8edb6614143bec2015d857e2c0aa5dce3",
+          "revision": "eae4a343c12be17f7d8b6e153e29525775a570f3",
           "version": null
         }
       },
       {
-        "package": "FloatplaneApp-Utilities",
-        "repositoryURL": "https://github.com/curiousurick/FloatplaneApp-Utilities",
+        "package": "Kenmore-Utilities",
+        "repositoryURL": "https://github.com/curiousurick/Kenmore-Utilities.git",
         "state": {
           "branch": "main",
-          "revision": "48c6aab99d35e754ace011c5d8042be72de1f165",
+          "revision": "c65a3fbdcc6a36995abdfe31cf4ae41d0da2910c",
           "version": null
         }
       },

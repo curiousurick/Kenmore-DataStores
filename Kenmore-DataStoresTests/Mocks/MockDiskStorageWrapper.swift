@@ -22,7 +22,7 @@
 import Cache
 import XCTest
 import Foundation
-@testable import FloatplaneApp_DataStores
+@testable import Kenmore_DataStores
 
 extension Expiry: Equatable {
     public static func == (lhs: Expiry, rhs: Expiry) -> Bool {
