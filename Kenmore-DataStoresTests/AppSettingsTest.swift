@@ -62,7 +62,7 @@ final class AppSettingsTest: XCTestCase {
         // Assert
         XCTAssertEqual(subject.qualitySettings, DeliveryKeyQualityLevel.defaultLevel)
     }
-    
+
     func testSetAndGetFirstCreatorId() {
         // Arrange
         let firstCreatorId = "linustechtips"

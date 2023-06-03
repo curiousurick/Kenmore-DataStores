@@ -51,11 +51,11 @@ public class AppSettings {
             userDefaults.set(newValue.rawValue, forKey: QualitySettingsKey)
         }
     }
-    
+
     public var firstCreatorId: String? {
         get {
             // Found in userDefault
-            return userDefaults.string(forKey: FirstCreatorKey)
+            userDefaults.string(forKey: FirstCreatorKey)
         }
         set {
             userDefaults.set(newValue, forKey: FirstCreatorKey)
