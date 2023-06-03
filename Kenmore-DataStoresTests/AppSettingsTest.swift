@@ -24,10 +24,12 @@ import Kenmore_Models
 @testable import Kenmore_DataStores
 
 private let QualitySettingsKey = "com.georgie.floatplane.QualitySettings"
+private let FirstCreatorKey = "com.georgie.floatplane.FirstCreatorKey"
 
 private extension AppSettings {
     func reset() {
         UserDefaults.standard.removeObject(forKey: QualitySettingsKey)
+        UserDefaults.standard.removeObject(forKey: FirstCreatorKey)
     }
 }
 
@@ -59,5 +61,20 @@ final class AppSettingsTest: XCTestCase {
 
         // Assert
         XCTAssertEqual(subject.qualitySettings, DeliveryKeyQualityLevel.defaultLevel)
+    }
+    
+    func testSetAndGetFirstCreatorId() {
+        // Arrange
+        let firstCreatorId = "linustechtips"
+        // Act
+        subject.firstCreatorId = firstCreatorId
+
+        // Assert
+        XCTAssertEqual(subject.firstCreatorId, firstCreatorId)
+    }
+
+    func testGetDefaultFirstCreatorId() {
+        // Assert
+        XCTAssertNil(subject.firstCreatorId)
     }
 }

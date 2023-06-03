@@ -26,6 +26,7 @@ import Kenmore_Models
 /// Currently used for default quality level settings. Do not put personal or private data here.
 public class AppSettings {
     private let QualitySettingsKey = "com.georgie.floatplane.QualitySettings"
+    private let FirstCreatorKey = "com.georgie.floatplane.FirstCreatorKey"
     /// Data is stored in UserDefaults
     private let userDefaults = UserDefaults.standard
 
@@ -48,6 +49,16 @@ public class AppSettings {
         }
         set {
             userDefaults.set(newValue.rawValue, forKey: QualitySettingsKey)
+        }
+    }
+    
+    public var firstCreatorId: String? {
+        get {
+            // Found in userDefault
+            return userDefaults.string(forKey: FirstCreatorKey)
+        }
+        set {
+            userDefaults.set(newValue, forKey: FirstCreatorKey)
         }
     }
 }
