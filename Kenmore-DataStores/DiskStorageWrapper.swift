@@ -67,13 +67,13 @@ public class DiskStorageWrapper<Key: Hashable, Value: Codable> {
         }
     }
 
-    public func removeExpiredObjects(completion: ((Cache.Result<Void>) -> Void)? = nil) {
+    public func removeExpiredObjects(completion: ((Result<Void, Error>) -> Void)? = nil) {
         storage.async.removeExpiredObjects { result in
             completion?(result)
         }
     }
 
-    public func removeAll(completion: ((Cache.Result<Void>) -> Void)? = nil) {
+    public func removeAll(completion: ((Result<Void, Error>) -> Void)? = nil) {
         storage.async.removeAll { result in
             completion?(result)
         }
