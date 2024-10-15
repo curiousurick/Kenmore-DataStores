@@ -16,7 +16,7 @@
       "location" : "git@github.com:curiousurick/Kenmore-Models.git",
       "state" : {
         "branch" : "main",
-        "revision" : "76bf6fabd45909dd4d96a248d611fcc768616856"
+        "revision" : "d672b0e91f8615909d6ea671abb663e0b2a40c1f"
       }
     },
     {
@@ -25,7 +25,7 @@
       "location" : "git@github.com:curiousurick/Kenmore-Utilities.git",
       "state" : {
         "branch" : "main",
-        "revision" : "b67cabc33015655c9615e3b89868c3d9d9060c87"
+        "revision" : "3f5e20d6817e5225cd65302d4087d12813ef0fb7"
       }
     },
     {

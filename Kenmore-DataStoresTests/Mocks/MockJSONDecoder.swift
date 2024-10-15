@@ -21,7 +21,7 @@
 
 import Foundation
 
-class MockJSONDecoder: JSONDecoder {
+class MockJSONDecoder: JSONDecoder, @unchecked Sendable {
     var mockDecodeResult: ((Data) -> Decodable)?
     var mockThrownError: Error?
     override func decode<T>(_: T.Type, from data: Data) throws -> T where T: Decodable {

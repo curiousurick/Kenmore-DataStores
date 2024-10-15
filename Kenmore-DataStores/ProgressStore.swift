@@ -30,8 +30,8 @@ public class ProgressStore {
     /// Wrapper access to Cache framework's Storage object. This is for unit-testing purposes.
     private let storage: DiskStorageWrapper<String, TimeInterval>
 
-    @available(*, deprecated, message: "VisibleForTesting")
-    init(storage: DiskStorageWrapper<String, TimeInterval>) {
+    // VisibleForTesting
+    internal init(storage: DiskStorageWrapper<String, TimeInterval>) {
         self.storage = storage
     }
 

@@ -32,8 +32,8 @@ class KeychainAccess {
     /// Actual keychain implementation
     let keychain: UICKeyChainStore
 
-    @available(*, deprecated, message: "VisibleForTesting")
-    init(keychain: UICKeyChainStore) {
+    // VisibleForTesting
+    internal init(keychain: UICKeyChainStore) {
         self.keychain = keychain
     }
 
